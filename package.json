@@ -1,0 +1,16 @@
+{
+  "name": "overmind-counter",
+  "version": "1.0.0",
+  "description": "Introduction counter application for Overmind",
+  "main": "src/index.js",
+  "dependencies": {
+    "overmind": "28.0.4",
+    "overmind-react": "29.0.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "vite": "6.3.3"
+  },
+  "scripts": {
+    "start": "vite"
+  }
+}
