@@ -2,7 +2,7 @@
   "name": "overmind-counter",
   "version": "1.0.0",
   "description": "Introduction counter application for Overmind",
-  "main": "src/index.js",
+  "main": "src/index.jsx",
   "dependencies": {
     "overmind": "28.0.4",
     "overmind-react": "29.0.6",
