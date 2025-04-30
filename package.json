@@ -6,9 +6,9 @@
   "dependencies": {
     "overmind": "28.0.4",
     "overmind-react": "29.0.6",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
-    "vite": "6.3.3"
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "vite": "6.3.4"
   },
   "scripts": {
     "start": "vite"

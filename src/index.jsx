@@ -7,7 +7,6 @@ const app = createOvermind({
   state: {
     count: 0,
     isEven: derived((state) => state.count % 2 == 0),
-    isOdd: derived((state) => state.count % 2 !== 0),
   },
   actions: {
     increaseCount({ state }) {
@@ -16,11 +15,11 @@ const app = createOvermind({
     decreaseCount({ state }) {
       state.count--;
     },
-    reportEvenState({ state }) {
+    reportState({ state }) {
       window.alert(state.isEven);
     },
-  },
-});
+  }
+}, { devtools: false });
 
 const useAppState = createStateHook();
 const useActions = createActionsHook();
@@ -37,13 +36,8 @@ function App() {
         <button onClick={actions.increaseCount}>increase</button>
       </div>
       <div>
-        {/* uncomment below to make button behavior as-desired */}
-        {/* <p>isEven? {`${state.isEven}`}</p> */}
-        <p>
-          button below does not correctly report value unless `state.isEven` is
-          accessed within this page as above
-        </p>
-        <button onClick={actions.reportEvenState}>is even?</button>
+        {/*<pre>{JSON.stringify(state, undefined, 2)}</pre>*/}
+        <button onClick={actions.reportState}>Show State</button>
       </div>
     </div>
   );
